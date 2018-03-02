@@ -64,7 +64,7 @@ project (_AMD_LIBRARY_NAME .. "_Capture_Viewer")
    floatingpoint "Fast"
 
    -- Specify WindowsTargetPlatformVersion here for VS2015
-   windowstarget (_AMD_WIN_SDK_VERSION)
+   systemversion (_AMD_WIN_SDK_VERSION)
 
    -- Copy DLLs to the local bin directory
    postbuildcommands { amdSamplePostbuildCommands(false, false) }
@@ -77,6 +77,8 @@ project (_AMD_LIBRARY_NAME .. "_Capture_Viewer")
 
    filter "configurations:Debug"
       defines { "WIN32", "_DEBUG", "DEBUG", "PROFILE", "_WINDOWS", "_WIN32_WINNT=0x0601" }
-      flags { "Symbols", "FatalWarnings", "Unicode", "WinMain" }
+      flags { "FatalWarnings" }
+      symbols "On"
+      characterset "Unicode"
       targetsuffix ("_Debug" .. _AMD_VS_SUFFIX)
 

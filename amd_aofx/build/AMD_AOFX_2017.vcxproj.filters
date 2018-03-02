@@ -15,6 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\inc\AMD_AOFX.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AMD_AOFX_OPAQUE.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AMD_AOFX_Precompiled.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AMD_AOFX.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AMD_AOFX_DEBUG.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AMD_AOFX_OPAQUE.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="..\src\Shaders\AMD_AOFX.hlsl">
       <Filter>src\Shaders</Filter>
     </None>
@@ -48,27 +70,5 @@
     <None Include="..\src\Shaders\BilateralFilter.hlsl">
       <Filter>src\Shaders</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\inc\AMD_AOFX.h">
-      <Filter>inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\AMD_AOFX_OPAQUE.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\AMD_AOFX_Precompiled.h">
-      <Filter>src</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\src\AMD_AOFX.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\AMD_AOFX_DEBUG.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\AMD_AOFX_OPAQUE.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

@@ -9,20 +9,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\src\ResourceFiles\dpiaware.manifest">
-      <Filter>ResourceFiles</Filter>
-    </None>
-    <None Include="..\src\Shaders\AOFX_Capture_Viewer.hlsl">
-      <Filter>Shaders</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\src\ResourceFiles\resource.h">
       <Filter>ResourceFiles</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\AOFX_Capture_Viewer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\ResourceFiles\dpiaware.manifest">
+      <Filter>ResourceFiles</Filter>
+    </None>
+    <None Include="..\src\Shaders\AOFX_Capture_Viewer.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\src\ResourceFiles\AOFX_Capture_Viewer.rc">
